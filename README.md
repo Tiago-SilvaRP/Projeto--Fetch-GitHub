@@ -21,4 +21,4 @@ Input de pesquisa possui verificação de conteúdo, e a busca de usuário tambe
 
 ## Demonstração do Projeto
 
-<img src="./src/images/gif.projeto-Fetch-GitHub.gif" alt="Gif demonstração de uso do projeto">
+[<img src="./src/images/gif.projeto-Fetch-GitHub.gif" alt="Gif demonstração de uso do projeto">]
