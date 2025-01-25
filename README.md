@@ -18,3 +18,7 @@ Input de pesquisa possui verificação de conteúdo, e a busca de usuário tambe
 - CSS
 - JavaScript
 - Consumo API GitHub
+
+## Demonstração do Projeto
+
+<img src="./src/images/gif.projeto-Fetch-GitHub.gif" alt="Gif demonstração de uso do projeto">
