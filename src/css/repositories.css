@@ -18,6 +18,16 @@
     transition: 0.3s ease-in-out;
 }
 
+.container .profile-data .repositories ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .profile-data .repositories ul li p{
+    padding-top: 10px;
+    font-size: 10px;
+}
+
 .container .profile-data .repositories ul li a:hover {
     background-color: hotpink;
     color: #fff

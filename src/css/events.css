@@ -1,0 +1,22 @@
+.container .profile-data .events{
+    padding-top: 0;
+}
+
+.container .profile-data .events h2{
+    margin-bottom: 30px;
+}
+
+.container .profile-data .events ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container .profile-data .events li{
+    border-radius: 10px;
+    padding: 10px;
+}

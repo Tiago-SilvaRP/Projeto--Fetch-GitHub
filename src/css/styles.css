@@ -103,6 +103,20 @@ main {
   width: 50%;
 }
 
+.container .profile-data .info .data .followers{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  border:  solid 1px grey;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.container .profile-data .info .data .followers span{
+  font-weight: 600;
+}
+
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
