@@ -34,7 +34,7 @@ const screen = {
 
         let listEvents = ''
         user.events.forEach(list => {
-            listEvents += `<li>${list.repo.name} - ${list.payload.commits[0].message}</li>`
+            listEvents += `<li>${list.repo.name} - ${list.type}</li>`
         })
         
 
