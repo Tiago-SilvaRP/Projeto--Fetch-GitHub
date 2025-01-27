@@ -33,7 +33,10 @@ const screen = {
         }
 
         let listEvents = ''
-        user.events.forEach(list => listEvents += `<li>${list.repo.name} - ${list.type}</li>`)
+        user.events.forEach(list => {
+            listEvents += `<li>${list.repo.name} - ${list.payload.commits[0].message}</li>`
+        })
+        
 
         if (user.events.length > 0) {
         this.userprofile.innerHTML += `<div class="events section">
