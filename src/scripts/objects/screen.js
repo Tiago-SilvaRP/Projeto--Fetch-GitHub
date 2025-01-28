@@ -33,14 +33,16 @@ const screen = {
         }
 
         let listEvents = ''
-        const noCommit = "Sem mensagem de commit"
         user.events.forEach(list => {
-            listEvents += `<li>${list.repo.name} - ${list.payload.commits[0].message}</li>`
+            listEvents += `<li>${list.repo.name} - ${list.type}</li>`
+            if(list.type === 'CreateEvent') {
+                this.userprofile.innerHTML += `<div class="events section">
+                                                    <h2>Eventos</h2>
+                                                    <li>${list.repo.name} - Sem mensagem de commit</li>
+                                                </div>`
+            }
         })
-        console.log(listEvents);
         
-        
-
         if (user.events.length > 0) {
         this.userprofile.innerHTML += `<div class="events section">
                                             <h2>Eventos</h2>

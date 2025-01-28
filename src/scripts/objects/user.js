@@ -10,6 +10,7 @@ const user = {
     stargazers_count: '',
     watchers:'',
     language:'',
+    events: [],
     setInfo(gitHubUser){
         this.avatarUrl = gitHubUser.avatar_url
         this.name = gitHubUser.name
