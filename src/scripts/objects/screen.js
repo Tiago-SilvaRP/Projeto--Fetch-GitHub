@@ -35,12 +35,7 @@ const screen = {
         let listEvents = ''
         user.events.forEach(list => {
             listEvents += `<li>${list.repo.name} - ${list.type}</li>`
-            if(list.type === 'CreateEvent') {
-                this.userprofile.innerHTML += `<div class="events section">
-                                                    <h2>Eventos</h2>
-                                                    <li>${list.repo.name} - Sem mensagem de commit</li>
-                                                </div>`
-            }
+            if(list.type === 'CreateEvent') this.userprofile.innerHTML += `<li>Sem mensagem de commit</li>`
         })
         
         if (user.events.length > 0) {

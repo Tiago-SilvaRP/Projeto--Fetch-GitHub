@@ -21,15 +21,24 @@
 .container .profile-data .repositories ul li{
     display: flex;
     flex-direction: column;
+
 }
 
 .container .profile-data .repositories ul li p{
-    padding-top: 10px;
+    padding: 10px;
     font-size: 15px;
+    background-color: grey;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.container .profile-data .repositories ul li i{
+    color: rgb(15, 204, 15);
 }
 
 .container .profile-data .repositories ul li a:hover {
-    background-color: hotpink;
+    background-color: rgb(15, 204, 15);
     color: #fff
 }
 

@@ -80,7 +80,7 @@ main {
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
+  background-color: rgb(15, 204, 15);
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -106,6 +106,7 @@ main {
 .container .profile-data .info .data .followers{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 10px;
   gap: 10px;
   border:  solid 1px grey;
@@ -120,7 +121,7 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid rgb(17, 197, 17);
 }
 
 .container .profile-data .info h1{
