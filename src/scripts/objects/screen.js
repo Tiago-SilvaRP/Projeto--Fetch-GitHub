@@ -8,8 +8,10 @@ const screen = {
                                     <p>${user.bio ?? 'Não possui bio cadastrada 😥'}</p>
                                 
                                     <div class="followers">
-                                        <p><span>Seguidores: </span>${user.followers ?? "0"}</p>
-                                        <p><span>Seguindo: </span>${user.following ?? "0"}</p>
+                                        <p><span><i class="fas fa-users"></i> 
+                                            Seguidores: </span>${user.followers ?? "0"}</p>
+                                        <p><span><i class="fas fa-users"></i> 
+                                            Seguindo: </span>${user.following ?? "0"}</p>
                                     </div>
                                 </div>
                             </div>`
@@ -24,7 +26,7 @@ const screen = {
                 </p>
             </a> 
         </li>`)
-        
+
         if (user.repositories.length > 0) {
             this.userprofile.innerHTML += `<div class="repositories section">
                                                 <h2>Repositórios</h2>
@@ -36,13 +38,13 @@ const screen = {
         user.events.forEach(list => {
             listEvents += `<li>${list.repo.name} - ${list.payload.commits?.[0].message ?? 'Sem mensagem de commit'}</li>`
         })
-        
+
         if (user.events.length > 0) {
-        this.userprofile.innerHTML += `<div class="events section">
+            this.userprofile.innerHTML += `<div class="events section">
                                             <h2>Eventos</h2>
                                             <ul>${listEvents}</ul>
                                         </div>`
-                                }
+        }
     },
     renderNotFound() {
         this.userprofile.innerHTML = "<h3>Usuário não encontrado😯</h3>"
