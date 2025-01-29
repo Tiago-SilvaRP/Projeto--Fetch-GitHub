@@ -34,7 +34,7 @@ const screen = {
 
         let listEvents = ''
         user.events.forEach(list => {
-            listEvents += `<li>${list.repo.name} - ${list.payload.commits?.[0].message ? list.payload.commits?.[0].message : 'Sem mensagem de commit'}</li>`
+            listEvents += `<li>${list.repo.name} - ${list.payload.commits?.[0].message ?? 'Sem mensagem de commit'}</li>`
         })
         
         if (user.events.length > 0) {
